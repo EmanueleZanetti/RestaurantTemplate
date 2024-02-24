@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8edd2; /* Colore di sfondo desiderato */
+    width: 100%;
+    position: fixed; /* Fissa l'header */
+    top: 0; /* Posiziona l'header in cima alla pagina */
+    left: 0;
+    z-index: 1000;
+  }
+  .title {
+    font-family: "libre bodoni";
+    color: #c70505;
+    font-style: oblique;
+    font-size: 6vb;
+  }
+  .ulist {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  .ulist li {
+    padding: 30px;
+  }
+  .ulist li a {
+    text-decoration: none;
+    color: red;
+    font-size: 2vb;
+    font-weight: bold;
+  }
+  
