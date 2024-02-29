@@ -14,6 +14,7 @@
     color: #c70505;
     font-style: oblique;
     font-size: 6vb;
+    padding-left: 30px;
   }
   .ulist {
     display: flex;
@@ -29,4 +30,29 @@
     font-size: 2vb;
     font-weight: bold;
   }
-  
+  .container {
+    position: relative;
+    width: 100%;
+  }
+  .container img{
+    filter: blur(5px);
+    width: 98vw;
+    display: block;
+    height: 115vh;
+  }
+  .container p{
+    text-shadow:-2px -2px 4px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    color: white;
+    font-family: 'libre bodoni';
+    font-weight: 700;
+    text-align: center;
+    width: 150vb;
+    position: absolute;
+    top: 50%; /* Posiziona il paragrafo al centro verticale */
+    left: 50%; /* Posiziona il paragrafo al centro orizzontale */
+    transform: translate(-50%, -50%); /* Sposta il paragrafo indietro di metà della sua larghezza e altezza per centrarlo */
+    padding: 10px; /* Aggiungi spazio intorno al testo */
+    border-radius: 5px; /* Bordo arrotondato */
+    font-size: 10vb;
+  }
