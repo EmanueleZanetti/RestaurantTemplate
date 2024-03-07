@@ -1,3 +1,6 @@
+body {
+  padding-top: 60px; /* Adjust this value to match your header's height */
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -8,51 +11,54 @@
     top: 0; /* Posiziona l'header in cima alla pagina */
     left: 0;
     z-index: 1000;
-  }
-  .title {
+}
+
+.title {
     font-family: "libre bodoni";
     color: #c70505;
     font-style: oblique;
     font-size: 6vb;
     padding-left: 30px;
-  }
-  .ulist {
+}
+.ulist {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-  }
-  .ulist li {
+}
+.ulist li {
     padding: 30px;
-  }
-  .ulist li a {
+}
+.ulist li a {
     text-decoration: none;
     color: red;
     font-size: 2vb;
     font-weight: bold;
-  }
-  .container {
-    position: relative;
+}
+.container {
+  position: relative;
+  width: 100%;
+  padding-top: 60px; /* Adjust this value to match your header's height */
+}
+
+.container img {
     width: 100%;
-  }
-  .container img{
-    filter: blur(5px);
-    width: 98vw;
-    display: block;
-    height: 115vh;
-  }
-  .container p{
-    text-shadow:-2px -2px 4px rgba(0, 0, 0, 1);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    height: auto;
+}
+
+.subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-family: 'libre bodoni';
+    font-family: "libre bodoni";
     font-weight: 700;
     text-align: center;
-    width: 150vb;
-    position: absolute;
-    top: 50%; /* Posiziona il paragrafo al centro verticale */
-    left: 50%; /* Posiziona il paragrafo al centro orizzontale */
-    transform: translate(-50%, -50%); /* Sposta il paragrafo indietro di metà della sua larghezza e altezza per centrarlo */
-    padding: 10px; /* Aggiungi spazio intorno al testo */
-    border-radius: 5px; /* Bordo arrotondato */
-    font-size: 10vb;
+    font-size: 10em; /* Adjust font size as needed */
+}
+
+@media screen and (max-width: 700px) {
+  .subtitle {
+    font-size: 1em;
   }
+}
